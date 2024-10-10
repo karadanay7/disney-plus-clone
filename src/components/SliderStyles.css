@@ -1,0 +1,29 @@
+/* SliderStyles.css */
+
+/* Customize the dots container */
+.slick-dots {
+    bottom: -30px; /* Adjusts the position of the dots */
+    display: flex !important;
+    justify-content: center;
+}
+
+/* Customize each dot */
+.slick-dots li button:before {
+    font-size: 12px; /* Adjust the size of the dots */
+    color: #ddd; /* Default color of dots */
+    opacity: 0.25; /* Default opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Change the color of the active dot */
+.slick-dots li.slick-active button:before {
+    color: #fff; /* Active dot color */
+    opacity: 1; /* Full opacity for active dot */
+    transform: scale(1.2); /* Scale the active dot slightly */
+}
+
+/* Change dot hover effect */
+.slick-dots li:hover button:before {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.1); /* Scale slightly on hover */
+}
